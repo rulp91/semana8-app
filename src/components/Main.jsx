@@ -25,6 +25,7 @@ import ActivityIndicatorScreen from "./screens/ActivityIndicatorScreen";
 import PickerScreen from "./screens/PickerScreen";
 import SwitchScreen from "./screens/SwitchScreen";
 import TextScreen from "./screens/TextScreen";
+import AlertScreen from "./screens/AlertScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -147,6 +148,11 @@ const Main = () => {
         <Stack.Screen
           name="TextScreen"
           component={TextScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="AlertScreen"
+          component={AlertScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>

@@ -152,5 +152,12 @@ export default [
     "description": "Descripción de React Native - TextScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "TextScreen"
+  },
+  {
+    "id": 23,
+    "component": "React Native - AlertScreen",
+    "description": "Descripción de React Native - AlertScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "AlertScreen"
   }
 ]
