@@ -124,5 +124,12 @@ export default [
     "description": "Descripción de React Native - ModalScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "ModalScreen"
+  },
+  {
+    "id": 19,
+    "component": "React Native - ActivityIndicatorScreen",
+    "description": "Descripción de React Native - ActivityIndicatorScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "ActivityIndicatorScreen"
   }
 ]

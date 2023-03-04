@@ -21,6 +21,7 @@ import StylingScreen from "./screens/StylingScreen";
 import TextInputScreen from "./screens/TextInputScreen";
 import WebViewScreen from "./screens/WebViewScreen";
 import ModalScreen from "./screens/ModalScreen";
+import ActivityIndicatorScreen from "./screens/ActivityIndicatorScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -123,6 +124,11 @@ const Main = () => {
         <Stack.Screen
           name="ModalScreen"
           component={ModalScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="ActivityIndicatorScreen"
+          component={ActivityIndicatorScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
