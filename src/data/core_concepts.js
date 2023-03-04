@@ -131,5 +131,12 @@ export default [
     "description": "Descripción de React Native - ActivityIndicatorScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "ActivityIndicatorScreen"
+  },
+  {
+    "id": 20,
+    "component": "React Native - PickerScreen",
+    "description": "Descripción de React Native - PickerScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "PickerScreen"
   }
 ]
