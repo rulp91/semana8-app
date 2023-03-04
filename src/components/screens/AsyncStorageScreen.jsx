@@ -1,56 +1,115 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import {
+  SafeAreaView,
+  StyleSheet,
+  View,
+  TextInput,
+  Text,
+  TouchableOpacity,
+  Button,
+} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Text, View, TextInput, StyleSheet, Button } from "react-native";
 
-class AsyncStorageScreen extends Component {
-  state = {
-    name: "Ola ke Ase",
+const AsyncStorageScreen = ({ navigation }) => {
+  // To get the value from the TextInput
+  const [textInputValue, setTextInputValue] = useState("");
+  // To set the value on Text
+  const [getValue, setGetValue] = useState("");
+  let storageKey = "current-storage-key";
+  const saveValueFunction = () => {
+    //function to save the value in AsyncStorage
+    if (textInputValue) {
+      //To check the input not empty
+      AsyncStorage.setItem(storageKey, textInputValue);
+      setTextInputValue("");
+      alert("Data Saved");
+      //alert to confirm
+    } else {
+      alert("Please fill data");
+      //alert for the empty InputText
+    }
   };
-  componentDidMount = () =>
-    AsyncStorage.getItem("name").then((value) =>
-      this.setState({ name: value })
+
+  const getValueFunction = () => {
+    //function to get the value from AsyncStorage
+    AsyncStorage.getItem(storageKey).then(
+      (value) =>
+        //AsyncStorage returns a promise so adding a callback to get the value
+        setGetValue(value)
+      //Setting the value in Text
     );
-
-  setName = (value) => {
-    AsyncStorage.setItem("name", value);
-    this.setState({ name: value });
   };
-  render() {
-    return (
-      <View style={styles.main}>
-        <View style={styles.container}>
-          <TextInput
-            style={styles.textInput}
-            autoCapitalize="none"
-            onChangeText={this.setName}
-          />
-          <Text>"Ola ke ase"</Text>
-        </View>
-        <Text> </Text>
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
+
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <Text style={styles.titleText}>
+          AsyncStorage in React Native to Store Data in Session
+        </Text>
+
+        <Text style={styles.textStyle}> {getValue} </Text>
+
+        <TextInput
+          placeholder="Enter Some Text here"
+          value={textInputValue}
+          onChangeText={(data) => setTextInputValue(data)}
+          underlineColorAndroid="transparent"
+          style={styles.textInputStyle}
         />
+        <TouchableOpacity
+          onPress={saveValueFunction}
+          style={styles.buttonStyle}
+        >
+          <Text style={styles.buttonTextStyle}> SAVE VALUE </Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={getValueFunction} style={styles.buttonStyle}>
+          <Text style={styles.buttonTextStyle}> GET VALUE </Text>
+        </TouchableOpacity>
       </View>
-    );
-  }
-}
+
+      <View>
+        <Text>Hola Mundo</Text>
+        <Button title="Go back" onPress={() => navigation.goBack()} />
+      </View>
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    marginTop: 50,
+    padding: 10,
+    backgroundColor: "white",
   },
-  textInput: {
-    margin: 5,
-    height: 100,
+  titleText: {
+    fontSize: 22,
+    fontWeight: "bold",
+    textAlign: "center",
+    paddingVertical: 20,
+  },
+  textStyle: {
+    padding: 10,
+    textAlign: "center",
+  },
+  buttonStyle: {
+    fontSize: 16,
+    color: "white",
+    backgroundColor: "green",
+    padding: 5,
+    marginTop: 32,
+    minWidth: 250,
+  },
+  buttonTextStyle: {
+    padding: 5,
+    color: "white",
+    textAlign: "center",
+  },
+  textInputStyle: {
+    textAlign: "center",
+    height: 40,
+    width: "100%",
     borderWidth: 1,
-    backgroundColor: "#7685ed",
-  },
-  main: {
-    flex: 1,
-    flexDirection: "column",
+    borderColor: "green",
   },
 });
 export default AsyncStorageScreen;
