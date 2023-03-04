@@ -17,6 +17,11 @@ class WebViewScreen extends Component {
             uri: "https://www.google.com/?gws_rd=cr,ssl&ei=SICcV9_EFqqk6ASA3ZaABA#q=tutorialspoint",
           }}
         />
+        <Text> </Text>
+        <Button
+          title="Go back"
+          onPress={() => this.props.navigation.goBack()}
+        />
       </View>
     );
   }
