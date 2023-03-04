@@ -138,5 +138,12 @@ export default [
     "description": "Descripción de React Native - PickerScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "PickerScreen"
+  },
+  {
+    "id": 21,
+    "component": "React Native - SwitchScreen",
+    "description": "Descripción de React Native - SwitchScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "SwitchScreen"
   }
 ]
