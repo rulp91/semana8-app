@@ -12,7 +12,7 @@ const ImagesScreen = ({ navigation }) => {
         style={{ width: 200, height: 200 }}
       />
       <Text> </Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Button title="Volver" onPress={() => navigation.goBack()} />
     </View>
   );
 };

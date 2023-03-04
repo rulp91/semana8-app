@@ -23,10 +23,7 @@ class PickerScreen extends Component {
         </View>
 
         <Text> </Text>
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
-        />
+        <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
       </View>
     );
   }

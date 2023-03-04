@@ -166,5 +166,13 @@ export default [
     "description": "Descripción de React Native - GeolocationScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "GeolocationScreen"
+  },
+  {
+    "id": 25,
+    "component": "React Native - AsyncStorageScreen",
+    "description": "Descripción de React Native - AsyncStorageScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "AsyncStorageScreen"
   }
+  
 ]

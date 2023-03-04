@@ -17,11 +17,8 @@ class SwitchScreen extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.container}>
-          {/*Text to show the text according to switch condition*/}
           <Text>{this.state.switchValue ? "Switch  ON" : "Switch  OFF"}</Text>
 
-          {/*Switch with value set in constructor*/}
-          {/*onValueChange will be triggered after switch condition changes*/}
           <Switch
             style={{ marginTop: 30 }}
             onValueChange={this.toggleSwitch}
@@ -30,10 +27,7 @@ class SwitchScreen extends Component {
         </View>
 
         <Text> </Text>
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
-        />
+        <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
       </View>
     );
   }

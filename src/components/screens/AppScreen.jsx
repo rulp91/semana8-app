@@ -5,7 +5,7 @@ const AppScreen = ({ navigation }) => {
   return (
     <View>
       <Text>Hola Mundo</Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Button title="Volver" onPress={() => navigation.goBack()} />
     </View>
   );
 };

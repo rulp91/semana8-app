@@ -21,7 +21,7 @@ const ListViewScreen = ({ navigation }) => {
         ))}
       </View>
       <Text> </Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Button title="Volver" onPress={() => navigation.goBack()} />
     </View>
   );
 };

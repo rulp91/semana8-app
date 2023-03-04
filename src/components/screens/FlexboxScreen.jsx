@@ -29,7 +29,7 @@ const FlexboxScreen = ({ navigation }) => {
       </View>
       <Text> </Text>
       <View>
-        <Button title="Go back" onPress={() => navigation.goBack()} />
+        <Button title="Volver" onPress={() => navigation.goBack()} />
       </View>
     </ScrollView>
   );
