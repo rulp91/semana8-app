@@ -145,5 +145,12 @@ export default [
     "description": "Descripción de React Native - SwitchScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "SwitchScreen"
+  },
+  {
+    "id": 22,
+    "component": "React Native - TextScreen",
+    "description": "Descripción de React Native - TextScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "TextScreen"
   }
 ]

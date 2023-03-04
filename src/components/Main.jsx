@@ -24,6 +24,7 @@ import ModalScreen from "./screens/ModalScreen";
 import ActivityIndicatorScreen from "./screens/ActivityIndicatorScreen";
 import PickerScreen from "./screens/PickerScreen";
 import SwitchScreen from "./screens/SwitchScreen";
+import TextScreen from "./screens/TextScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -141,6 +142,11 @@ const Main = () => {
         <Stack.Screen
           name="SwitchScreen"
           component={SwitchScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="TextScreen"
+          component={TextScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
