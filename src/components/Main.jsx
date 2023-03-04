@@ -27,6 +27,7 @@ import SwitchScreen from "./screens/SwitchScreen";
 import TextScreen from "./screens/TextScreen";
 import AlertScreen from "./screens/AlertScreen";
 import GeolocationScreen from "./screens/GeolocationScreen";
+import AsyncStorageScreen from "./screens/AsyncStorageScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -159,6 +160,11 @@ const Main = () => {
         <Stack.Screen
           name="GeolocationScreen"
           component={GeolocationScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="AsyncStorageScreen"
+          component={AsyncStorageScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
