@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, Picker, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { Picker } from "@react-native-picker/picker";
 
 class PickerScreen extends Component {
   state = { user: "" };
