@@ -117,5 +117,12 @@ export default [
     "description": "Descripción de React Native - WebView",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "WebViewScreen"
+  },
+  {
+    "id": 18,
+    "component": "React Native - ModalScreen",
+    "description": "Descripción de React Native - ModalScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "ModalScreen"
   }
 ]

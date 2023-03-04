@@ -20,6 +20,7 @@ import StateScreen from "./screens/StateScreen";
 import StylingScreen from "./screens/StylingScreen";
 import TextInputScreen from "./screens/TextInputScreen";
 import WebViewScreen from "./screens/WebViewScreen";
+import ModalScreen from "./screens/ModalScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -117,6 +118,11 @@ const Main = () => {
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="ModalScreen"
+          component={ModalScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
