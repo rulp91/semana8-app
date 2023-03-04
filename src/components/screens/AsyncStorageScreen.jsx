@@ -11,46 +11,31 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const AsyncStorageScreen = ({ navigation }) => {
-  // To get the value from the TextInput
   const [textInputValue, setTextInputValue] = useState("");
-  // To set the value on Text
   const [getValue, setGetValue] = useState("");
   let storageKey = "current-storage-key";
+
   const saveValueFunction = () => {
-    //function to save the value in AsyncStorage
     if (textInputValue) {
-      //To check the input not empty
       AsyncStorage.setItem(storageKey, textInputValue);
       setTextInputValue("");
-      alert("Data Saved");
-      //alert to confirm
+      alert("Datos almacenados correctamente");
     } else {
-      alert("Please fill data");
-      //alert for the empty InputText
+      alert("Introduzca primero los datos a almacenar");
     }
   };
 
   const getValueFunction = () => {
-    //function to get the value from AsyncStorage
-    AsyncStorage.getItem(storageKey).then(
-      (value) =>
-        //AsyncStorage returns a promise so adding a callback to get the value
-        setGetValue(value)
-      //Setting the value in Text
-    );
+    AsyncStorage.getItem(storageKey).then((value) => setGetValue(value));
   };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
-        <Text style={styles.titleText}>
-          AsyncStorage in React Native to Store Data in Session
-        </Text>
-
+        <Text style={styles.titleText}>Almacenamiento asincrono de datos</Text>
         <Text style={styles.textStyle}> {getValue} </Text>
-
         <TextInput
-          placeholder="Enter Some Text here"
+          placeholder="Introduzca el valor que desea almacenar"
           value={textInputValue}
           onChangeText={(data) => setTextInputValue(data)}
           underlineColorAndroid="transparent"
@@ -60,16 +45,16 @@ const AsyncStorageScreen = ({ navigation }) => {
           onPress={saveValueFunction}
           style={styles.buttonStyle}
         >
-          <Text style={styles.buttonTextStyle}> SAVE VALUE </Text>
+          <Text style={styles.buttonTextStyle}> Almacenar el valor </Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={getValueFunction} style={styles.buttonStyle}>
-          <Text style={styles.buttonTextStyle}> GET VALUE </Text>
+          <Text style={styles.buttonTextStyle}> Mostrar valor </Text>
         </TouchableOpacity>
       </View>
 
       <View>
         <Text>Hola Mundo</Text>
-        <Button title="Go back" onPress={() => navigation.goBack()} />
+        <Button title="Volver" onPress={() => navigation.goBack()} />
       </View>
     </SafeAreaView>
   );
