@@ -159,5 +159,12 @@ export default [
     "description": "Descripción de React Native - AlertScreen",
     "url": "https://ejemplo.com/react-native-running-android",
     "route": "AlertScreen"
+  },
+  {
+    "id": 24,
+    "component": "React Native - GeolocationScreen",
+    "description": "Descripción de React Native - GeolocationScreen",
+    "url": "https://ejemplo.com/react-native-running-android",
+    "route": "GeolocationScreen"
   }
 ]
