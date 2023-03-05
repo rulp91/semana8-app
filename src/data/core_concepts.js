@@ -3,14 +3,14 @@ export default [
     "id": 1,
     "component": "React Native - App",
     "description": "Descripción de React Native - App",
-    "url": "https://ejemplo.com/react-native-app",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_app.htm",
     "route": "AppScreen"
   },
   {
     "id": 2,
     "component": "React Native - State",
-    "description": "Descripción de React Native - State",
-    "url": "https://ejemplo.com/react-native-state",
+    "description": "El estado es mutable mientras que los accesorios son inmutables. Esto significa que el estado se puede actualizar en el futuro mientras que los accesorios no se pueden actualizar.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_state.htm",
     "route": "StateScreen"
   },
   {
