@@ -16,8 +16,8 @@ export default [
   {
     "id": 3,
     "component": "React Native - Props",
-    "description": "Descripción de React Native - Props",
-    "url": "https://ejemplo.com/react-native-props",
+    "description": "Los componentes de presentación deben obtener todos los datos pasando accesorios. Solo los componentes del contenedor deben tener estado.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_props.htm",
     "route": "PropsScreen"
   },
   {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Switch, View, Text, StyleSheet, Button } from "react-native";
-import { Picker } from "@react-native-picker/picker";
 
 class StateScreen extends Component {
   constructor(prop) {
@@ -49,16 +48,4 @@ const styles = StyleSheet.create({
   },
 });
 
-/*
-const StateScreen = ({ navigation }) => {
-  return (
-    <View>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Changes you make will automatically reload.</Text>
-      <Text>Shake your phone to open the developer menu.</Text>
-      <Button title="Volver" onPress={() => navigation.goBack()} />
-    </View>
-  );
-};
-*/
 export default StateScreen;
