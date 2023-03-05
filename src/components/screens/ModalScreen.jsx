@@ -23,18 +23,18 @@ class ModalScreen extends Component {
             transparent={false}
             visible={this.state.modalVisible}
             onRequestClose={() => {
-              console.log("Modal has been closed.");
+              console.log("El modal ha sido cerrado.");
             }}
           >
             <View style={styles.modal}>
-              <Text style={styles.text}>Modal is open!</Text>
+              <Text style={styles.text}>El modal está abierto!</Text>
 
               <TouchableHighlight
                 onPress={() => {
                   this.toggleModal(!this.state.modalVisible);
                 }}
               >
-                <Text style={styles.text}>Close Modal</Text>
+                <Text style={styles.text}>Cerrar modal</Text>
               </TouchableHighlight>
             </View>
           </Modal>
@@ -44,7 +44,7 @@ class ModalScreen extends Component {
               this.toggleModal(true);
             }}
           >
-            <Text style={styles.text}>Open Modal</Text>
+            <Text style={styles.text}>Abrir modal</Text>
           </TouchableHighlight>
         </View>
         <Text> </Text>
@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     padding: 100,
   },
   text: {
+    backgroundColor: "#898f15",
     color: "#3f2949",
     marginTop: 10,
   },

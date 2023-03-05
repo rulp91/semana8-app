@@ -53,7 +53,7 @@ const AsyncStorageScreen = ({ navigation }) => {
       </View>
 
       <View>
-        <Text>Hola Mundo</Text>
+        <Text> </Text>
         <Button title="Volver" onPress={() => navigation.goBack()} />
       </View>
     </SafeAreaView>

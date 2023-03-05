@@ -86,92 +86,92 @@ export default [
   {
     "id": 13,
     "component": "React Native - Debugging",
-    "description": "Descripción de React Native - Debugging",
-    "url": "https://ejemplo.com/react-native-debugging",
+    "description": "React native ofrece un par de métodos que ayudan a depurar su código.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_debugging.htm",
     "route": "DebuggingScreen"
   },
   {
     "id": 14,
     "component": "React Native - Router",
-    "description": "Descripción de React Native - Router",
-    "url": "https://ejemplo.com/react-native-router",
+    "description": "En este capítulo, entenderemos la navegación en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_router.htm",
     "route": "RouterScreen"
   },
   {
     "id": 15,
     "component": "React Native - Running IOS",
-    "description": "Descripción de React Native - Running IOS",
-    "url": "https://ejemplo.com/react-native-running-ios",
+    "description": "Si desea probar su aplicación en el simulador IOS, todo lo que necesita es abrir la carpeta raíz de su aplicación en la terminal y ejecutar",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_running_ios.htm",
     "route": "RunningIOSScreen"
   },
   {
     "id": 16,
     "component": "React Native - Running Android",
-    "description": "Descripción de React Native - Running Android",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "Podemos ejecutar la aplicación React Native en la plataforma Android ejecutando el siguiente código en la terminal.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_running_android.htm",
     "route": "RunningAndroidScreen"
   },
   {
     "id": 17,
     "component": "React Native - WebView",
-    "description": "Descripción de React Native - WebView",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, aprenderemos a usar WebView. Se usa cuando desea mostrar una página web en su aplicación móvil en línea.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_webview.htm",
     "route": "WebViewScreen"
   },
   {
     "id": 18,
     "component": "React Native - ModalScreen",
-    "description": "Descripción de React Native - ModalScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, le mostraremos cómo usar el componente modal en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_modal.htm",
     "route": "ModalScreen"
   },
   {
     "id": 19,
     "component": "React Native - ActivityIndicatorScreen",
-    "description": "Descripción de React Native - ActivityIndicatorScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, le mostraremos cómo usar el indicador de actividad en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_activityindicator.htm",
     "route": "ActivityIndicatorScreen"
   },
   {
     "id": 20,
     "component": "React Native - PickerScreen",
-    "description": "Descripción de React Native - PickerScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, crearemos un Selector simple con dos opciones disponibles.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_picker.htm",
     "route": "PickerScreen"
   },
   {
     "id": 21,
     "component": "React Native - SwitchScreen",
-    "description": "Descripción de React Native - SwitchScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, explicaremos el componente Switch en un par de pasos.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_switch.htm",
     "route": "SwitchScreen"
   },
   {
     "id": 22,
     "component": "React Native - TextScreen",
-    "description": "Descripción de React Native - TextScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "Este componente se puede anidar y puede heredar propiedades de padre a hijo. Esto puede ser útil de muchas maneras. Le mostraremos ejemplos de mayúsculas en la primera letra, estilo de palabras o partes del texto, etc.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_text.htm",
     "route": "TextScreen"
   },
   {
     "id": 23,
     "component": "React Native - AlertScreen",
-    "description": "Descripción de React Native - AlertScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, comprenderemos cómo crear un componente de Alerta personalizado.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_alert.htm",
     "route": "AlertScreen"
   },
   {
     "id": 24,
     "component": "React Native - GeolocationScreen",
-    "description": "Descripción de React Native - GeolocationScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, le mostraremos cómo usar la Geolocalización.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_geolocation.htm",
     "route": "GeolocationScreen"
   },
   {
     "id": 25,
     "component": "React Native - AsyncStorageScreen",
-    "description": "Descripción de React Native - AsyncStorageScreen",
-    "url": "https://ejemplo.com/react-native-running-android",
+    "description": "En este capítulo, le mostraremos cómo conservar sus datos usando AsyncStorage.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_asyncstorage.htm",
     "route": "AsyncStorageScreen"
   }
   
