@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
 class StateScreen extends Component {
   constructor(prop) {

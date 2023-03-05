@@ -10,7 +10,7 @@ import {
 
 const AlertScreen = ({ navigation }) => {
   const showAlert = () => {
-    Alert.alert("Alerta!!!! necesitas....una cerveza...");
+    alert("Alerta!!!! necesitas....una cerveza...");
   };
   return (
     <View>

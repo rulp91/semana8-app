@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, Button } from "react-native";
 const AppScreen = ({ navigation }) => {
   return (
     <View>
+      <Text> </Text>
+      <Text> </Text>
+      <Text> </Text>
       <View style={styles.container}>
         <Text>¡Abre App.js para comenzar a trabajar en tu aplicación!</Text>
         <Text>Los cambios que realice se recargarán automáticamente.</Text>
