@@ -23,43 +23,43 @@ export default [
   {
     "id": 4,
     "component": "React Native - Styling",
-    "description": "Descripción de React Native - Styling",
-    "url": "https://ejemplo.com/react-native-styling",
+    "description": "Hay un par de formas de diseñar sus elementos en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_styling.htm",
     "route": "StylingScreen"
   },
   {
     "id": 5,
     "component": "React Native - Flexbox",
-    "description": "Descripción de React Native - Flexbox",
-    "url": "https://ejemplo.com/react-native-flexbox",
+    "description": "Para adaptarse a diferentes tamaños de pantalla, React Native ofrece compatibilidad con Flexbox.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_flexbox.htm",
     "route": "FlexboxScreen"
   },
   {
     "id": 6,
     "component": "React Native - ListView",
-    "description": "Descripción de React Native - ListView",
-    "url": "https://ejemplo.com/react-native-listview",
+    "description": "En este capítulo, le mostraremos cómo crear una lista en React Native. Importaremos List en nuestro componente Home y lo mostraremos en pantalla.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_listview.htm",
     "route": "ListViewScreen"
   },
   {
     "id": 7,
     "component": "React Native - Text Input",
-    "description": "Descripción de React Native - Text Input",
-    "url": "https://ejemplo.com/react-native-text-input",
+    "description": "En este capítulo, le mostraremos cómo trabajar con elementos TextInput en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_text_input.htm",
     "route": "TextInputScreen"
   },
   {
     "id": 8,
     "component": "React Native - ScrollView",
-    "description": "Descripción de React Native - ScrollView",
-    "url": "https://ejemplo.com/react-native-scrollview",
+    "description": "En este capítulo, le mostraremos cómo trabajar con el elemento ScrollView.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_scrollview.htm",
     "route": "ScrollViewScreen"
   },
   {
     "id": 9,
     "component": "React Native - Images",
-    "description": "Descripción de React Native - Images",
-    "url": "https://ejemplo.com/react-native-images",
+    "description": "En este capítulo, entenderemos cómo trabajar con imágenes en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_images.htm",
     "route": "ImagesScreen"
   },
   {
