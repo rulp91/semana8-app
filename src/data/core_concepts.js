@@ -65,22 +65,22 @@ export default [
   {
     "id": 10,
     "component": "React Native - HTTP",
-    "description": "Descripción de React Native - HTTP",
-    "url": "https://ejemplo.com/react-native-http",
+    "description": "En este capítulo, le mostraremos cómo usar fetch para manejar solicitudes de red.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_http.htm",
     "route": "HTTPScreen"
   },
   {
     "id": 11,
     "component": "React Native - Buttons",
-    "description": "Descripción de React Native - Buttons",
-    "url": "https://ejemplo.com/react-native-buttons",
+    "description": "En este capítulo, le mostraremos componentes táctiles en react Native. Los llamamos 'tocables' porque ofrecen animaciones integradas y podemos usar el accesorio onPress para manejar eventos táctiles.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_buttons.htm",
     "route": "ButtonsScreen"
   },
   {
     "id": 12,
     "component": "React Native - Animations",
-    "description": "Descripción de React Native - Animations",
-    "url": "https://ejemplo.com/react-native-animations",
+    "description": "En este capítulo, le mostraremos cómo usar LayoutAnimation en React Native.",
+    "url": "https://www.tutorialspoint.com/react_native/react_native_animations.htm",
     "route": "AnimationsScreen"
   },
   {
