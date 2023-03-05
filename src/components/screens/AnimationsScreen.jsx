@@ -32,13 +32,11 @@ class AnimationsScreen extends Component {
       <View>
         <Text> </Text>
         <TouchableOpacity style={styles.container} onPress={this.animatedBox}>
+          <Text>Pulsar sobre el cuadro azul </Text>
           <Animated.View style={[styles.box, animatedStyle]} />
         </TouchableOpacity>
         <Text> </Text>
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
-        />
+        <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
       </View>
     );
   }

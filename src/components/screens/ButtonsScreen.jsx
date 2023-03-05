@@ -5,15 +5,15 @@ const ButtonsScreen = ({ navigation }) => {
   const handlePress = () => false;
   return (
     <View>
-      <Button onPress={handlePress} title="Red button!" color="red" />
+      <Button onPress={handlePress} title="Botón Rojo!" color="red" />
       <Text> </Text>
       <View style={styles.container}>
         <TouchableOpacity>
-          <Text style={styles.text}>Button</Text>
+          <Text style={styles.text}>Botón Verde!</Text>
         </TouchableOpacity>
       </View>
       <Text> </Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Button title="Volver" onPress={() => navigation.goBack()} />
     </View>
   );
 };
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 25,
     borderColor: "black",
-    backgroundColor: "red",
+    backgroundColor: "green",
   },
 });
 export default ButtonsScreen;

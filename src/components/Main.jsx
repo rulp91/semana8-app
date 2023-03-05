@@ -20,6 +20,14 @@ import StateScreen from "./screens/StateScreen";
 import StylingScreen from "./screens/StylingScreen";
 import TextInputScreen from "./screens/TextInputScreen";
 import WebViewScreen from "./screens/WebViewScreen";
+import ModalScreen from "./screens/ModalScreen";
+import ActivityIndicatorScreen from "./screens/ActivityIndicatorScreen";
+import PickerScreen from "./screens/PickerScreen";
+import SwitchScreen from "./screens/SwitchScreen";
+import TextScreen from "./screens/TextScreen";
+import AlertScreen from "./screens/AlertScreen";
+import GeolocationScreen from "./screens/GeolocationScreen";
+import AsyncStorageScreen from "./screens/AsyncStorageScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -117,6 +125,46 @@ const Main = () => {
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="ModalScreen"
+          component={ModalScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="ActivityIndicatorScreen"
+          component={ActivityIndicatorScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="PickerScreen"
+          component={PickerScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="SwitchScreen"
+          component={SwitchScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="TextScreen"
+          component={TextScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="AlertScreen"
+          component={AlertScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="GeolocationScreen"
+          component={GeolocationScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
+        <Stack.Screen
+          name="AsyncStorageScreen"
+          component={AsyncStorageScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
